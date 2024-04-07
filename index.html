@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link href="styles.css" rel="stylesheet">
+        <script src="script.js" defer></script>
+        <title>Your Golden State Warriors</title>
+    </head>
+    <body>
+        <div id="smallTopper">
+            <ul>
+                <li><a href="#"><img src="images/NbaStoreLogo.svg" alt="The logo for the NBA store." class="nbaLogo"></a></li>
+                <li>Enter&nbsp;your&nbsp;shipping&nbsp;info&nbsp;<a href="#"><strong>here</strong></a></li>
+                <a href="#"><li>Track Order</li></a>
+                <a href="#"><li>Help</li></a>
+                <a href="#"><li>My Account</li></a>
+                <li><a href="#"><img src="images/cart-icon.png" alt="Cart Icon that takes you to check out" class="cartIcon"></a></li>
+            </ul>
+        </div>
+        <header>
+            <a href="index.html"><img src="images/GSWLogoNoWords.webp" alt="The Golden State Warriors logo"></a>
+            <h1>Golden&nbsp;State&nbsp;Warriors</h1>
+            <nav>
+                <ul>
+                    <li><a href="#roster">Roster</a></li>
+                    <li><a href="#schedule">Schedule</a></li>
+                    <li><a href="#tickets">Tickets</a></li>
+                </ul>
+            </nav>
+        </header>    
+        <article>
+            <h2>Dubs Nation News</h2>
+            <div>
+                <figure>
+                    <img src="images/PooleforPaul.jpeg" alt="Jordan Poole and Chris Paul photos side by side.">
+                    <figcaption>Jordan Poole traded to Wizards for Chris Paul.</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/davisDrafted.avif" alt="Newly drafted rookie Trayce Jackson-Davis poses with his new Golden State Warriors jersey.">
+                    <figcaption>After Four Years of College, Trayce Jackson-&nbsp;Davis Enters the League</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/podsiemskiDrafted.avif" alt="Newly drafted rookie Brandin Podziemski poses with his new Golden State Warriors jersey.">
+                    <figcaption>Brandin Podziemski Coming From a Hot Shooting Streak in His Last Season.</figcaption>
+                </figure>
+            </div>    
+        </article>
+        <div id="switchContainer">
+            <h2>Shop Warriors</h2>
+            <ul>
+                <li id="currySwitch">Curry Jersey</li>
+                <li id="thompsonSwitch">Thompson Jersey</li>
+                <li id="greenSwitch">Green Jersey</li>
+            </ul>
+            <figure id="curry">
+                <img class="shopCurry" src="images/CurryJersey3.webp" alt="The front and back of Stephen Curry's white Warrios Jersey.">
+                <p class="shopCurry">Stephen Curry, Number 30 Jersey<br><br>$159.99<br><br><a href="#">Buy Now</a></p>
+            </figure>
+            <figure id="thompson">
+                <img class="shopThompson" src="images/ThompsonJersey1.webp" alt="The front and back of Klay Thompson's blue Warrios Jersey.">
+                <p class="shopThompson">Klay Thompson, Number 11 Jersey<br><br>$159.99<br><br><a href="#">Buy Now</a></p>
+            </figure>
+            <figure id="green">
+                <img class="shopGreen" src="images/GreenJersey1.webp" alt="The front and back of Draymond Green's blue Warrios Jersey.">
+                <p class="shopGreen">Draymond Green, Number 23 Jersey<br><br>$159.99<br><br><a href="#">Buy Now</a></p>
+            </figure>
+        </div>
+        <div id="bottomGrid">
+            <div id="numbersGame">
+                <h2>Choose a number between 1 and 10 and win!</h2>
+                <p id="displayUserNumber"></p>
+                <p id="randomNumber"></p>
+                <p id="gameMessage"></p>
+                <input type="number" name="num" id="num" min="1" max="10">
+                <input type="submit" id="guesserSubmit" value="Guess Now!">
+                <img src="images/CurryCmon.jpeg" alt="Stephen Curry hyping up the crowd.">
+            </div>
+            <div>
+                <form id="myForm">
+                    <h2>Sign Up for Dubs Nation</h2>
+                    <div>
+                        <label for="firstName">First Name</label>
+                        <input type="text" id="firstName" name="firstName">
+                        <div id="firstNameError"></div>
+                        <label for="lastName">Last Name</label>
+                        <input type="text" id="lastName" name="lastName">
+                    </div>
+                    <div id="lastNameError"></div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+                    <div id="emailError"></div>
+                    <div>
+                        <label for="tel">Phone Number (000-000-0000)</label>
+                        <input type="tel" id="tel" name="tel">
+                    </div>
+                    <div id="telError"></div>
+                    <fieldset>
+                        <legend>Preferred Contact Method</legend>
+                        <label for="prefEmail">
+                            <span class="radio-input">
+                                <input type="radio" name="contactPref" id="prefEmail" required checked>
+                                <span class="radio-control"></span>
+                            </span>
+                            <span class="radio-label">Email</span>
+                        </label>
+                        <label for="prefPhone">
+                            <span class="radio-input">
+                                <input type="radio" name="contactPref" id="prefPhone">
+                                <span class="radio-control"></span>
+                            </span>
+                            <span class="radio-label">Phone</span>
+                        </label>
+                    </fieldset>
+                    <div>
+                        <br>
+                        <label for="comments">Add any comments below:</label>
+                        <textarea id="comments" name="comments" rows="4" cols="30"></textarea>
+                    </div>
+                    <div id="commentError"></div>
+                    <div>
+                        <input type="submit" id="submitForm" value="Submit">
+                    </div>
+                </form>
+            </div>
+        </div>
+    <footer>
+        <p>Copyright &copy; 2023 NBA Media Ventures, LLC. All rights reserved.</p>
+        <div>
+            <ul>
+                <li>Privacy Policy</li>
+                <li>Terms of Use</li>
+                <li>Customer Support</li>
+            </ul>
+        </div>
+        <p>NBA.com is part of Warner Media, LLC’s Turner Sports & Entertainment Digital Network</p>
+    </footer>    
+    </body>
+</html>

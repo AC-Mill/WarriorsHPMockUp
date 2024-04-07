@@ -1,0 +1,400 @@
+/*Alexander Miller*/
+
+
+/* CSS Resets*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*Begin customization*/
+
+:root{
+    --goldenYellow: #FFC72C;
+    --warriorBlue: #1D428A;
+    --white: #fff;
+    --black: #000;
+    --copperplate: "Copperplate", serif;
+    --helvetica: "Helvetica", "Arial", sans-serif;
+}
+
+html{
+    width: 1280px;
+}
+
+header{
+    width: 1280px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: var(--goldenYellow);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+header h1{
+    font-family: var(--copperplate);
+    font-weight: bold;
+    color: var(--warriorBlue);
+    font-size: 50px;
+    position: relative;
+    left: 70px;
+}
+
+header img {
+    width: 100px;
+    height: 100px;
+    margin-left: 75px;
+}
+header nav ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    font-family: var(--copperplate);
+    position: relative;
+    top: 70px;
+    font-size: 25px;
+    right: 415px;
+}
+
+nav ul li {
+    margin-left: 150px;
+    background-color: white;
+    padding: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--warriorBlue);
+}
+
+nav ul li a:visited{
+    color: var(--warriorBlue);
+}
+
+#smallTopper{
+    padding-bottom: 10px;
+    font-family: var(--copperplate);
+}
+
+#smallTopper ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+#smallTopper ul li + li{
+    margin-top: 20px;
+    margin-left: 24px;
+}
+
+#smallTopper ul a:visited{
+    color: var(--warriorBlue);
+}
+
+#smallTopper ul a li{
+    position: absolute;
+    top: 20px;
+    margin-left: 90px;
+}
+
+.nbaLogo {
+    width: 100px;
+    height: 50px;
+    position: relative;
+    left: 10px;
+}
+
+.cartIcon {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    margin-left: 100px;
+    top: 5px;
+}
+
+article {
+    width: 1140px;
+    border: var(--warriorBlue) solid 3px;
+    margin-top: 10px;
+    margin-left: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+    
+}
+
+article h2 {
+    font-family: var(--copperplate);
+    font-size: 35px;
+    color: var(--warriorBlue);
+    padding: 10px 10px;
+    font-weight: bolder;
+
+}
+
+article img{
+    width:350px;
+    height: 200px;
+    padding: 10px 10px;
+    border-bottom: var(--goldenYellow) solid 2px;
+    cursor: pointer;
+}
+
+article figcaption{
+    padding: 10px 10px;
+    font-family: var(--helvetica);
+    font-weight: bold;
+    font-size: 16px;
+    color: var(--black);
+    cursor: pointer;
+}
+
+article div{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#switchContainer{
+    width: 1140px;
+    border: var(--warriorBlue) solid 3px;
+    background-color: var(--goldenYellow);
+    margin-top: 10px;
+    margin-left: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#switchContainer h2 {
+    font-family: var(--copperplate);
+    font-size: 35px;
+    color: var(--warriorBlue);
+    padding: 10px 10px;
+    font-weight: bolder;
+}
+
+#switchContainer ul{
+    position: absolute;
+    margin-left: 880px;
+    margin-top: 40px;
+}
+
+#switchContainer ul li{
+    margin-bottom: 85px;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: var(--copperplate);
+    font-weight: bold;
+    color: var(--warriorBlue);
+    font-size: 25px;
+}
+
+#switchContainer ul li a:visited{
+    color: var(--warriorBlue);
+}
+
+#switchContainer ul li a:focus {
+    border: var(--white) solid 2px;
+}
+
+#switchContainer img{
+    height: 330px;
+    width: auto;
+    position: relative;
+    left: 350px;
+    border: var(--warriorBlue) solid 2px;
+}
+
+#switchContainer p{
+    font-family: var(--helvetica);
+    font-size: 20px;
+    text-align: center;
+    position: relative;
+    left: -415px;
+    bottom: 220px;
+}
+#curry{
+    display: block;
+}
+
+#thompson{
+    display: none;
+}
+
+#green{
+    display: none;
+}
+
+#currySwitch{
+    border-bottom: var(--white) solid 3px;
+}
+
+#bottomGrid{
+    width: 1140px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 100px;
+}
+
+#numbersGame{
+    width: 425px;
+    border: var(--warriorBlue) solid 3px;
+    background-color: var(--white);
+    margin-top: 10px;
+    margin-left: 125px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#numbersGame h2 {
+    font-family: var(--copperplate);
+    font-size: 35px;
+    color: var(--warriorBlue);
+    padding: 10px 10px;
+    font-weight: bolder;
+}
+
+#numbersGame p {
+    font-family: var(--helvetica);
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#numbersGame input[type=number]{
+    width: 400px;
+    margin-bottom: 10px;
+    padding: 8px;
+    border: var(--goldenYellow) solid 2px;
+    border-radius: 7px;
+
+}
+
+#numbersGame input[type=submit]{
+    padding: 10px 20px 10px 20px;
+    font-family: var(--copperplate);
+    font-size: 20px;
+    background: var(--goldenYellow);
+    color: var(--warriorBlue);
+    margin-left: 143.5px;}
+
+#numbersGame img{
+    width:350px;
+    height: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 37.5px;
+}
+
+form {
+    border: var(--goldenYellow) solid 3px;
+    background-color: var(--warriorBlue);
+    margin-top: 10px;
+    margin-left: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 60px;
+    width: 425px;
+}
+
+form h2{
+    font-family: var(--copperplate);
+    font-size: 35px;
+    color: var(--white);
+    padding: 10px 10px;
+    font-weight: bolder;
+}
+
+form label, form fieldset legend{
+    font-family: var(--helvetica);
+    font-size: 20px;
+    color: var(--white);
+    margin-bottom: 10px;
+}
+
+input[type=text], input[type=email], input[type=tel], textarea {
+    width: 400px;
+    padding: 8px;
+    margin-top: 4px;
+    margin-bottom: 12px;
+    border: var(--goldenYellow) solid 2px;
+    border-radius: 7px;
+}
+
+form input[type=submit]{
+    padding: 10px 20px 10px 20px;
+    font-family: var(--copperplate);
+    font-size: 20px;
+    background: var(--goldenYellow);
+    color: var(--warriorBlue);
+}
+
+#firstNameError, #lastNameError, #emailError, #telError, #commentError {
+    margin-bottom: 10px;
+    color: var(--goldenYellow);
+    font-family: var(--helvetica);
+    letter-spacing: 1px;
+    font-weight: lighter;
+}
+
+footer {
+    width:1280px;
+    height: 150px;
+    background-color: var(--warriorBlue);
+    color: var(--white);
+    font-family: var(--helvetica);
+    font-size: 16px;
+    padding-top: 10px;
+}
+
+footer p{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: 10px;
+}
+
+footer ul{
+    display: grid;
+    width:600px;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: 10px;
+}
+
+footer ul li{
+    cursor: pointer;
+}
